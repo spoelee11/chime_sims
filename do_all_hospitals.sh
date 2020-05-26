@@ -9,7 +9,7 @@ reopen_speed=.05
 reopen_cap=.2
 
 # Fit flexible beta, with shrinkage specified to be .25 (small)
-for loc in 'CCH' 'LGH' 'PAH' 'Downtown' 'HUP' 'PMC' 'MCP' 'MHUMH'
+for loc in 'CCH' 'LGH' 'PAH' 'Downtown' 'HUP' 'PMC' 'MCP' 'Mck' 'MHUMH'
 do 
 	echo $loc
 	echo $chains
@@ -29,7 +29,7 @@ do
 done
 
 # fit logistic as a backup
-for loc in 'CCH' 'LGH' 'PAH' 'Downtown' 'HUP' 'PMC' 'MCP' 'MHUMH'
+for loc in 'CCH' 'LGH' 'PAH' 'Downtown' 'HUP' 'PMC' 'MCP' 'Mck' 'MHUMH'
 do 
 	echo $loc
 	echo $chains
@@ -48,7 +48,7 @@ done
 
 # fit a version for LGH and CCH that has a downward prior, reflecting the fact that we know that there were clusters of LTC cases that won't get replicated next week:
 # Prior:  going down by 10%, plus or minus 5%
-for loc in 'CCH' 'LGH' 'PAH' 'Downtown' 'HUP' 'PMC' 'MCP' 'MHUMH'
+for loc in 'CCH' 'LGH' 'PAH' 'Downtown' 'HUP' 'PMC' 'MCP' 'Mck' 'MHUMH'
 do 
 	echo $loc
 	echo $chains
